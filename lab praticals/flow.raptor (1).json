@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1793696537317",
+          "selected": false
+        },
+        "assign1": {
+          "id": "assign1",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "i:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1793696939718",
+          "selected": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "input_1793696537317": {
+          "id": "input_1793696537317",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "str",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1793696540604",
+          "selected": false,
+          "prompt": "Enter the string"
+        },
+        "input_1793696540604": {
+          "id": "input_1793696540604",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "ch1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1793696544562",
+          "selected": false,
+          "prompt": "Enter the first character"
+        },
+        "input_1793696544562": {
+          "id": "input_1793696544562",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "ch2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign1",
+          "selected": false,
+          "prompt": "Enter the second character "
+        },
+        "assign_1793696939718": {
+          "id": "assign_1793696939718",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "n:=Length_of(str)",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1793697052271",
+          "selected": false
+        },
+        "loop_1793697052271": {
+          "id": "loop_1793697052271",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "i>n",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "beforeId": "selection_1793697336691",
+          "afterId": null,
+          "selected": false
+        },
+        "selection_1793697336691": {
+          "id": "selection_1793697336691",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "str[i] = ch1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": null,
+          "noId": null,
+          "selected": true
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}
